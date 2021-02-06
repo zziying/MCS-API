@@ -6,7 +6,6 @@ const courseSchema = require('./schemas/course-schema');
 const _ = require("lodash");
 
 const app = express();
-const port = process.env.port || 3000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -101,7 +100,12 @@ app.get("/:year/:term", async function(req, res) {
     })
 });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
+app.listen(port);
 
-app.listen(port, function() {
-    console.log(`Listening on port ${port}`);
+app.listen(3000, function() {
+    console.log(`Listening on port 3000`);
 });
