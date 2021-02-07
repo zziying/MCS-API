@@ -5,8 +5,8 @@
 MCS API is a api that allows CS students @ UIUC to search scores statistics of courses. 
 
 **Show All Courses**
-----
-    Return json data about all CS courses.
+
+Return json data about all CS courses.
 
 * **URL**
     https://mcsapi.herokuapp.com/courses
@@ -23,7 +23,8 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ```json
+    **Content:** 
+    ```json
     [
         {
             "_id":"601e39e39cb5ed1380521d72",
@@ -47,7 +48,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
             "instructor":"Davis, Neal E",
             "__v":0
         },
-        ...
     ]
     ```
  
@@ -71,7 +71,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 
 
 **Search Courses By Course Number**
-----
     Return json data about CS courses with specific course number.
 
 * **URL**
@@ -104,7 +103,8 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ```json
+    **Content:** 
+    ```json
     [
         {"_id":"601e39e39cb5ed1380521d91",
         "year":2020,
@@ -126,7 +126,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
         "W":0,
         "instructor":"Forsyth, David A",
         "__v":0},
-        ...
     ]
     ```
  
@@ -137,7 +136,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 
   
 **Search Courses By Course Name**
-----
     Return json data about CS courses *contains* a specific course name(case-insensitive).
 
 * **URL**
@@ -167,7 +165,8 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ```json
+    **Content:** 
+    ```json
     [
         {"_id":"601e39e39cb5ed1380521d91",
         "year":2020,
@@ -190,7 +189,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
         "W":0,
         "instructor":"Forsyth, David A",
         "__v":0},
-        ...
     ]
     ```
  
@@ -201,7 +199,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 
 
 **Search Courses By Year and Term**
-----
     Return a list of json data about CS courses according to a year and term. (e.g. spring 2019), term is case-insensitive.
 
 * **URL**
@@ -232,7 +229,8 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ```json
+    **Content:** 
+    ```json
     [
         {"_id":"601e39e39cb5ed1380521dee",
         "year":2019,
@@ -255,7 +253,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
         "W":1,
         "instructor":"Davis, Neal E",
         "__v":0},
-        ...
     ]
     ```
  
@@ -296,7 +293,8 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ```json
+    **Content:** 
+    ```json
     [
         {"_id":"601e39e39cb5ed1380521dae",
         "year":2019,
@@ -320,7 +318,6 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
         "instructor":"Gunter, Elsa",
         "__v":0
         },
-        ...
     ]
     ```
  
