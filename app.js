@@ -18,7 +18,7 @@ app.get("/courses", async function(req, res) {
              await courseSchema.find({}).then(result => {
                  res.send(result);
              }).catch(error => {
-                 res.send(error);
+                return res.status(404).send({error: "No courses was found."});
              })
         } finally {
             mongoose.connection.close();
@@ -35,7 +35,7 @@ app.get("/courses/:courseNumber([0-9][0-9][0-9])", async function(req, res){
              }).then(result => {
                  res.send(result);
              }).catch(error => {
-                 res.send("No courses matching that number was found.");
+                 return res.status(404).send({error: "No courses matching that number was found."});
              })
         } finally {
             mongoose.connection.close();
@@ -54,7 +54,7 @@ app.get("/courses/:courseName", async function(req, res) {
                  res.send(result);
              }).catch(error => {
                  console.log(error);
-                 return res.status(404).send({error: "Professor name doesn't exist."});
+                 return res.status(404).send({error: "Courses name doesn't exist."});
              })
         } finally {
             mongoose.connection.close();
