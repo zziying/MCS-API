@@ -5,13 +5,13 @@
 MCS API is an api that allows CS students @UIUC to search, view GPA / grade distribution of every CS courses.
 
 ## Data Source
-GPA data comes from [University of Illinois's GPA dataset](https://github.com/wadefagen/datasets/tree/master/gpa)
+GPA data is provided by [University of Illinois's GPA dataset](https://github.com/wadefagen/datasets/tree/master/gpa).
 
 ## Tech Stack
 * Backend: Express.js, MongoDB
 * Deployment: MongoDB Altas, Heroku, AWS
 
-## API Request Methods and Examples
+## API Usage
 
 * [Show All Courses](https://github.com/zziying/MCS-API#show-all-courses)
 * [Search Courses By Course Number](https://github.com/zziying/MCS-API#search-courses-by-course-number)
