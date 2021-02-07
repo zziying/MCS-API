@@ -11,11 +11,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // requests targeting all the courses
-app.route("/courses", async function(req, res) {
+app.get("/courses", async function(req, res) {
     await mongo().then(async mongoose => {
         try {
             console.log("connected to mongoDB!");
-             await courseSchema.find().then(result => {
+             await courseSchema.find({}).then(result => {
                  res.send(result);
              }).catch(error => {
                  res.send(error);
@@ -43,7 +43,7 @@ app.get("/courses/:courseNumber([0-9][0-9][0-9])", async function(req, res){
     })
 });
 
-app.get("/:courseName", async function(req, res) {
+app.get("/courses/:courseName", async function(req, res) {
     await mongo().then(async mongoose => {
         try {
             console.log("connected to mongoDB!");
