@@ -4,8 +4,10 @@
 
 MCS API is a api that allows CS students @ UIUC to search scores statistics of courses. 
 
-**Show All Courses**
+## API Request Methods and Examples
 
+**Show All Courses**
+---
 Return json data about all CS courses.
 
 * **URL**
@@ -71,6 +73,7 @@ Return json data about all CS courses.
 
 
 **Search Courses By Course Number**
+---
     Return json data about CS courses with specific course number.
 
 * **URL**
@@ -136,6 +139,7 @@ Return json data about all CS courses.
 
   
 **Search Courses By Course Name**
+---
     Return json data about CS courses *contains* a specific course name(case-insensitive).
 
 * **URL**
@@ -199,6 +203,7 @@ Return json data about all CS courses.
 
 
 **Search Courses By Year and Term**
+---
     Return a list of json data about CS courses according to a year and term. (e.g. spring 2019), term is case-insensitive.
 
 * **URL**
