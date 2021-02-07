@@ -6,6 +6,12 @@ MCS API is a api that allows CS students @ UIUC to search scores statistics of c
 
 ## API Request Methods and Examples
 
+* [Show All Courses](https://github.com/zziying/MCS-API#show-all-courses)
+* [Search Courses By Course Number](https://github.com/zziying/MCS-API#search-courses-by-course-number)
+* [Search Courses By Course Name](https://github.com/zziying/MCS-API#show-all-courses-by-course-name)
+* [Search Courses By Year and Term](https://github.com/zziying/MCS-API#show-all-courses-by-year-and-term)
+* [Search Courses By Year](https://github.com/zziying/MCS-API#show-all-courses-by-year)
+
 **Show All Courses**
 ---
 Return json data about all CS courses.
